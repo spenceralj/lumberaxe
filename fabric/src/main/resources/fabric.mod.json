@@ -23,10 +23,10 @@
     "lumberaxe.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.16.10",
-    "minecraft": "~1.21.4",
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~1.21.1",
     "java": ">=21",
-    "architectury": ">=15.0.1",
+    "architectury": ">=13.0.11",
     "fabric-api": "*"
   }
 }

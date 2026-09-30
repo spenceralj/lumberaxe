@@ -4,7 +4,6 @@ import com.github.tacomonkey11.item.LumberaxeItem;
 import com.github.tacomonkey11.item.LumberaxeItems;
 import dev.architectury.event.EventResult;
 import dev.architectury.event.events.common.BlockEvent;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
 
 
@@ -24,9 +23,7 @@ public final class Lumberaxe {
         });
     }
 
-    public static ResourceLocation id(String location) {
-        return ResourceLocation.fromNamespaceAndPath(MOD_ID, location);
-    }
-
-
+    //TODO
+    // Adjust the breaking speed to slow down, it's best to smell the roses
+    // Adjust alg to lazily break the blocks, collect them all into a queue first, then break.
 }

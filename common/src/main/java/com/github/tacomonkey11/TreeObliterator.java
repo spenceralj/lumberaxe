@@ -42,7 +42,7 @@ public class TreeObliterator {
             if (!orderedList.isEmpty()) {
                 BlockPos logPosition = orderedList.remove();
                 BlockState logState = level.getBlockState(logPosition);
-                if (axe.nextDamageWillBreak() || !player.getMainHandItem().equals(axe)) {
+                if (!player.getMainHandItem().equals(axe)) {
                     orderedList.clear();
                 }
                 level.destroyBlock(logPosition, true, player);

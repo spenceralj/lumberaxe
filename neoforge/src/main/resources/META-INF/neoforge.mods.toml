@@ -16,21 +16,21 @@ logoFile = "icon.png"
 [[dependencies.lumberaxe]]
 modId = "neoforge"
 type = "required"
-versionRange = "[21.4,)"
+versionRange = "[21.1,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.lumberaxe]]
 modId = "minecraft"
 type = "required"
-versionRange = "[1.21.4,)"
+versionRange = "[1.21.1,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.lumberaxe]]
 modId = "architectury"
 type = "required"
-versionRange = "[15.0.1,)"
+versionRange = "[13.0.11,)"
 ordering = "AFTER"
 side = "BOTH"
 
