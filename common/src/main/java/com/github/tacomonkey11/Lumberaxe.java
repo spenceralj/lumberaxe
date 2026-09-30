@@ -15,15 +15,11 @@ public final class Lumberaxe {
 
         BlockEvent.BREAK.register((level, pos, state, player, xp) -> {
             if (player.getMainHandItem().is(item -> item.value() instanceof LumberaxeItem) && !player.isCrouching() && state.is(BlockTags.LOGS)) {
-                new TreeObliterator().obliterateTree(pos, level, player);
+                new TreeObliterator().obliterateTree(pos, level, player, player.getMainHandItem());
                 return EventResult.interruptFalse();
             }
 
             return EventResult.pass();
         });
     }
-
-    //TODO
-    // Adjust the breaking speed to slow down, it's best to smell the roses
-    // Adjust alg to lazily break the blocks, collect them all into a queue first, then break.
 }
